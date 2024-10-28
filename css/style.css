@@ -14,7 +14,6 @@ header{
     padding: 10px 20px;
 }
 
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -103,3 +102,70 @@ body {
     left: 20px;  Ajusta la posición horizontal 
 }
 */
+=======
+header li:hover{
+    transform: scale(1.2);
+}
+
+header ul li{
+    float: left;
+	margin:12px 25px;
+}
+header li{
+    list-style: none;
+}
+header a{
+    font: 20px arial;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.persona img{
+    border-radius: 30px;
+}
+.logo img{
+    border-radius:40%;
+}
+
+footer{
+    background-color:rgb(35, 123, 224) ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    text-align: center;
+    height: 40px;
+}
+
+footer a{
+    font: arial;
+    font-weight: bold;
+    padding: 15px 5px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:visited{
+    color: black;
+}
+
+footer img{
+    background-color: transparent;
+    animation: maps 1s infinite;
+}
+
+
+@keyframes maps {
+    0%{
+        transform:translateY(0px) ;
+    }
+    50%{
+        transform:translateY(10px) ;
+    }
+    100%{
+        transform:translateY(0px) ;
+    }
+}
