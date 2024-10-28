@@ -27,8 +27,16 @@ header li{
 }
 header a{
     font: 20px arial;
-    color:rgb(192, 185, 185);
+    font-weight: bold;
+    color:rgb(175, 37, 37);
     list-style: none;
     text-decoration: none;
+}
+
+.persona img{
+    border-radius: 30px;
+}
+.logo img{
+    border-radius:40%;
 }
 
