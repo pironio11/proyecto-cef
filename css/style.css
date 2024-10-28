@@ -14,6 +14,95 @@ header{
     padding: 10px 20px;
 }
 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.foto.B {
+    display: flex; /*Activacion del Flexbox*/
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Distribuir espacio entre imágenes */
+    margin: 1000px; /* Margen del contenedor */
+}
+.foto.B {
+    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
+    margin-bottom: 10px; /* Margen entre las filas */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.foto.V {
+    display: flex; /*Activacion del Flexbox*/
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Distribuir espacio entre imágenes */
+    margin: 1000px; /* Margen del contenedor */
+}
+.foto.V {
+    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
+    margin-bottom: 10px; /* Margen entre las filas */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.foto.H {
+    display: flex; /*Activacion del Flexbox*/
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Distribuir espacio entre imágenes */
+    margin: 1000px; /* Margen del contenedor */
+}
+.foto.H {
+    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
+    margin-bottom: 10px; /* Margen entre las filas */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.foto.F {
+    display: flex; /*Activacion del Flexbox*/
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Distribuir espacio entre imágenes */
+    margin: 1000px; /* Margen del contenedor */
+}
+.foto.F {
+    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
+    margin-bottom: 10px; /* Margen entre las filas */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.foto.P {
+    display: flex; /*Activacion del Flexbox*/
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Distribuir espacio entre imágenes */
+    margin: 1000px; /* Margen del contenedor */
+}
+.foto.P {
+    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
+    margin-bottom: 10px; /* Margen entre las filas */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+.foto.S {
+    display: flex; /*Activacion del Flexbox*/
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+    justify-content: space-between; /* Distribuir espacio entre imágenes */
+    margin: 1000px; /* Margen del contenedor */
+}
+.foto.S {
+    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
+    margin-bottom: 10px; /* Margen entre las filas */
+    height: auto; /* Mantener proporción de la imagen */
+}
+
+/*
+.contenedor {
+    position: relative;  Establece un contenedor relativo 
+    height: 400px;  Altura del contenedor
+}
+.galeria img {
+    position: absolute;  Posiciona la imagen en un lugar específico 
+    top: 10px;  Ajusta la posición vertical 
+    left: 20px;  Ajusta la posición horizontal 
+}
+*/
+=======
 header li:hover{
     transform: scale(1.2);
 }
