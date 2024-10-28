@@ -62,3 +62,21 @@ footer a{
 footer a:visited{
     color: black;
 }
+
+footer img{
+    background-color: transparent;
+    animation: maps 1s infinite;
+}
+
+
+@keyframes maps {
+    0%{
+        transform:translateY(0px) ;
+    }
+    50%{
+        transform:translateY(10px) ;
+    }
+    100%{
+        transform:translateY(0px) ;
+    }
+}
