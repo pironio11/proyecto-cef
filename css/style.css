@@ -13,3 +13,22 @@ header{
     align-items: center;
     padding: 10px 20px;
 }
+
+header li:hover{
+    transform: scale(1.2);
+}
+
+header ul li{
+    float: left;
+	margin:12px 25px;
+}
+header li{
+    list-style: none;
+}
+header a{
+    font: 20px arial;
+    color:rgb(192, 185, 185);
+    list-style: none;
+    text-decoration: none;
+}
+
