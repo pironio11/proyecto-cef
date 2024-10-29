@@ -3,12 +3,16 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-
+/*
     border: 1px dotted #FF0008;
-    
+*/
 }
 
 body {
+    background: url('../imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
@@ -108,13 +112,14 @@ footer img{
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
-    padding: 80px;
+    padding: 40px;
     max-width: 1000px;
     margin: auto;
 }
 
 .foto-BS, .foto-V, .foto-H, .foto-F, .foto-P, .foto-S {
-    background-color: #fff;
+    background-color: rgb(35, 123, 224);
+    opacity: 0.98;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -151,24 +156,30 @@ footer img{
 }
 
 .contenedor-info{
-    background-color: #c5c5c5;
+    background-color: transparent;
+    text-align: center;
+    margin: 50px;
+    color: white;
 }
 .inicio{
-    background-image: url(../imagenes/fondo.jpg);
-    padding: 100px 5px;
-    max-height: 1000px;
+    background-image: url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat; /* que no se repitan las imagenes */
+    background-size: cover; /* imagen completa adentro de este brackground*/
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    padding: 20px; /* espacio interior opcional */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* agrega una sombra para destacar la tarjeta */
     color: #ffffffc2;
-    
 }
 .inicio-contenido h1{
    text-align: center;
-   ;
 }
 .inicio-contenido h2{
     text-align: center;
 }
 .inicio-contenido li{
-    margin: 15px;
+    margin: 30px;
 }
 .inicio-contenido p{
     text-align: center;
