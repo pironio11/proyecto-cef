@@ -170,3 +170,6 @@ footer img{
 .inicio-contenido li{
     margin: 15px;
 }
+.inicio-contenido p{
+    text-align: center;
+}
