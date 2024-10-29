@@ -153,3 +153,10 @@ footer img{
 .contenedor-info{
     background-color: #c5c5c5;
 }
+.inicio{
+    background-image: url(../imagenes/fondo.jpg);
+    padding: 100px 5px;
+    max-height: 1000px;
+    color: #fff;
+    
+}
