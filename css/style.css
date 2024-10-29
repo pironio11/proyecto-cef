@@ -1,5 +1,16 @@
-body{
-    background-color: grey;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('../imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
@@ -8,101 +19,13 @@ body{
 
 header{
     background-color: rgb(35, 123, 224);
+    opacity: 0.8;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.foto.B {
-    display: flex; /*Activacion del Flexbox*/
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: space-between; /* Distribuir espacio entre imágenes */
-    margin: 1000px; /* Margen del contenedor */
-}
-.foto.B {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px; /* Margen entre las filas */
-    height: auto; /* Mantener proporción de la imagen */
-}
-
-.foto.V {
-    display: flex; /*Activacion del Flexbox*/
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: space-between; /* Distribuir espacio entre imágenes */
-    margin: 1000px; /* Margen del contenedor */
-}
-.foto.V {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px; /* Margen entre las filas */
-    height: auto; /* Mantener proporción de la imagen */
-}
-
-.foto.H {
-    display: flex; /*Activacion del Flexbox*/
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: space-between; /* Distribuir espacio entre imágenes */
-    margin: 1000px; /* Margen del contenedor */
-}
-.foto.H {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px; /* Margen entre las filas */
-    height: auto; /* Mantener proporción de la imagen */
-}
-
-.foto.F {
-    display: flex; /*Activacion del Flexbox*/
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: space-between; /* Distribuir espacio entre imágenes */
-    margin: 1000px; /* Margen del contenedor */
-}
-.foto.F {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px; /* Margen entre las filas */
-    height: auto; /* Mantener proporción de la imagen */
-}
-
-.foto.P {
-    display: flex; /*Activacion del Flexbox*/
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: space-between; /* Distribuir espacio entre imágenes */
-    margin: 1000px; /* Margen del contenedor */
-}
-.foto.P {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px; /* Margen entre las filas */
-    height: auto; /* Mantener proporción de la imagen */
-}
-
-.foto.S {
-    display: flex; /*Activacion del Flexbox*/
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: space-between; /* Distribuir espacio entre imágenes */
-    margin: 1000px; /* Margen del contenedor */
-}
-.foto.S {
-    width: calc(33% - 10px); /* Tres imágenes por fila con margen */
-    margin-bottom: 10px; /* Margen entre las filas */
-    height: auto; /* Mantener proporción de la imagen */
-}
-
-/*
-.contenedor {
-    position: relative;  Establece un contenedor relativo 
-    height: 400px;  Altura del contenedor
-}
-.galeria img {
-    position: absolute;  Posiciona la imagen en un lugar específico 
-    top: 10px;  Ajusta la posición vertical 
-    left: 20px;  Ajusta la posición horizontal 
-}
-*/
-=======
 header li:hover{
     transform: scale(1.2);
 }
@@ -129,15 +52,15 @@ header a{
     border-radius:40%;
 }
 
-footer{
-    background-color:rgb(35, 123, 224) ;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-top: 10px;
+footer{ /*Barra azul*/
     text-align: center;
-    height: 40px;
+    background-color:rgb(35, 123, 224);
+    opacity: 0.8;
+    color: white;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer a{
@@ -168,4 +91,63 @@ footer img{
     100%{
         transform:translateY(0px) ;
     }
+}
+
+.foto-B {
+    display: flex;
+    flex-direction: end;
+    margin-bottom: 20px;
+}
+
+.foto-A {
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-top: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 80px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.foto-BS, .foto-V, .foto-H, .foto-F, .foto-P, .foto-S {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.foto-BS:hover, .foto-V:hover, .foto-H:hover, .foto-F:hover, .foto-P:hover, .foto-S:hover {
+    transform: scale(1.05);
+}
+
+.foto-BS img, .foto-V img, .foto-H img, .foto-F img, .foto-P img, .foto-S img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-mask {
+    padding: 15px;
+    color: #333;
+}
+
+.image-mask h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.image-mask p {
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 10px;
 }
