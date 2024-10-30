@@ -184,3 +184,12 @@ footer img{
 .inicio-contenido p{
     text-align: center;
 }
+.resaltado {
+    color: #ffffff; /* cambia a cualquier color de texto */
+    font-weight: bold; /*  añade negrita */
+    text-decoration: underline; /* subraya el texto */
+}
+.description {
+    font-weight: bold;
+    padding: 0 4px;
+}
