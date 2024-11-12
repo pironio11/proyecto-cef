@@ -6,7 +6,7 @@
     border: 1px dotted #FF0008;
 }
 body {
-    /*background: url('../imagenes/fondo.jpg');*/
+    background: url('../imagenes/fondo.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -131,6 +131,11 @@ h3{
 }
 #U-17{
     text-align: center;
+}
+#categorias-basquet{
+    border:2px solid lightgrey;
+    background-color: rgb(35, 123, 224);
+    color: rgb(29, 26, 26);
 }
 
 
