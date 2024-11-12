@@ -96,10 +96,13 @@ footer img{
 
 #contenido-basquet{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 2fr 1fr ; 
+    grid-template-rows: 2fr;
     grid-gap: 20px;
     padding: 30px;
+    padding-bottom: 100px;
 }
+
 
 #tittle-basquet{
     text-align: center;
@@ -128,4 +131,29 @@ h3{
 }
 #U-17{
     text-align: center;
+}
+
+
+#torneos-basquet-txt{
+    size: 100%;
+}
+#torneos-basquet{
+   /* -ms-grid-column-align: end;*/
+   grid-column: 2/2;
+   grid-row: 2/3;
+   height: 200px;
+    
+}
+#info-basquet{
+    height: 200px;
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+
+
+
+#categorias-basquet{
+    grid-column: 1/2;
+    grid-row: 1/3;
 }
