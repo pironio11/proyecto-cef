@@ -139,17 +139,44 @@ h3{
 }
 #torneos-basquet{
    /* -ms-grid-column-align: end;*/
+   padding: 10px;
    grid-column: 2/2;
    grid-row: 2/3;
    height: 200px;
+    border:2px solid lightgrey;
+    background-color: rgb(35, 123, 224);
+    color: rgb(29, 26, 26);
+    text-align: center;
+}
+#torneos-basquet-txt{
+    padding: 0px;
+}
+#muniB{
+    height: 50px;
+    padding: 15px;
     
 }
-#info-basquet{
-    height: 200px;
-    grid-column: 2/2;
-    grid-row: 1/1;
+#picunB{
+    height: 50px;
+    padding: 15px;
+}
+#cipoB{
+    height: 50px;
+    padding: 15px;
 }
 
+#info-basquet{
+    height: 250px;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    background-color: rgb(35, 123, 224);
+    color: rgb(29, 26, 26);
+    border:2px solid lightgrey;
+}
+#info-basquet-txt{
+    font: 17px arial;
+    padding: 8px;
+}
 
 
 
@@ -157,3 +184,4 @@ h3{
     grid-column: 1/2;
     grid-row: 1/3;
 }
+
