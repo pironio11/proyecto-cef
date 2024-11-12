@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    border: 1px dotted #FF0008;
+    /*border: 1px dotted #FF0008;*/
 }
 body {
     background: url('../imagenes/fondo.jpg');
@@ -101,6 +101,8 @@ footer img{
     grid-gap: 20px;
     padding: 30px;
     padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 
@@ -122,20 +124,28 @@ h3{
 
 .cebollita{
     text-align: center;
+    padding: 5px;
 }
 #U-13{
     text-align: center;
+    padding: 5px;
 }
 #U-15{
     text-align: center;
+    padding: 5px;
 }
 #U-17{
     text-align: center;
+    padding: 5px;
 }
 #categorias-basquet{
     border:2px solid lightgrey;
     background-color: rgb(35, 123, 224);
-    color: rgb(29, 26, 26);
+    color: beige;
+    padding: 20px;
+}
+#masculino-basquet{
+    padding: 20px;
 }
 
 
@@ -150,7 +160,7 @@ h3{
    height: 200px;
     border:2px solid lightgrey;
     background-color: rgb(35, 123, 224);
-    color: rgb(29, 26, 26);
+    color: beige;
     text-align: center;
 }
 #torneos-basquet-txt{
@@ -175,8 +185,9 @@ h3{
     grid-column: 2/2;
     grid-row: 1/1;
     background-color: rgb(35, 123, 224);
-    color: rgb(29, 26, 26);
+    color: beige;
     border:2px solid lightgrey;
+    padding: 20px;
 }
 #info-basquet-txt{
     font: 17px arial;
