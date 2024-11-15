@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    border: 1px dotted #FF0008;
 }
 body {
     background: url('../imagenes/fondo.jpg');
@@ -17,7 +16,14 @@ body {
     padding-bottom: 20%; /* Agrega espacio en la parte inferior */
 }
 
-header{
+.persona img{
+    border-radius: 30px;
+}
+.logo img{
+    border-radius:10%;
+}
+
+header {
     background-color: rgb(35, 123, 224);
     opacity: 0.8;
     display: flex;
@@ -25,30 +31,25 @@ header{
     align-items: center;
     padding: 10px 20px;
 }
-header li:hover{
+
+header li:hover {
     transform: scale(1.2);
 }
 
-header ul li{
+header ul li {
     float: left;
-	margin:12px 25px;
-}
-header li{
-    list-style: none;
-}
-header a{
-    font: 20px arial;
-    font-weight: bold;
-    color:rgb(0, 0, 0);
-    list-style: none;
-    text-decoration: none;
+    margin: 12px 25px;
 }
 
-.persona img{
-    border-radius: 30px;
+header li {
+    list-style: none;
 }
-.logo img{
-    border-radius:40%;
+
+header a {
+    font: 20px arial;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 footer{ /*Barra azul*/
@@ -155,11 +156,16 @@ h1{
     justify-content: space-between; /* Espacio distribuido entre los elementos */
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0 10px;
+}
+
+.box:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
 .box img {
@@ -187,6 +193,6 @@ h1{
     text-overflow: ellipsis;
     white-space: normal;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* Limitar a 5 lineas */
-    -webkit-box-orient: vertical;
+    line-clamp: 5; /* Limitar a 5 lineas */
+    box-orient: vertical;
 }
