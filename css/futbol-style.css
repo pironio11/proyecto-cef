@@ -3,7 +3,13 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    border: 1px dotted #FF0008;
+    /*border: 1px dotted #FF0008;*/
+}
+body{
+    background: url('../imagenes/monumental.avif');
+    background-repeat: no-repeat;
+     background-attachment: fixed;
+    background-size: cover;
 }
 header{
     background-color: rgb(35, 123, 224);
@@ -78,4 +84,51 @@ footer img{
     100%{
         transform:translateY(0px) ;
     }
+}
+.contenedor-ft{
+    display: grid;
+    grid-template-columns: 2fr 1fr ; 
+    grid-template-rows: 2fr;
+    grid-gap: 20px;
+    padding: 30px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.titulo-futbol{
+    text-align: center;
+    padding: 40px;
+    font:20px arial ;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font: 20px arial;
+}
+.contenido-ft{
+    border:2px solid lightgrey;
+    background-color: rgb(35, 123, 224);
+    color: beige;
+    padding: 20px;
+}
+.torneos-ft{
+    border:2px solid lightgrey;
+    background-color: rgb(35, 123, 224);
+    color: beige;
+    padding: 20px;
+    height: 200px;
+}
+.contenido-ft p{
+    text-align: center;
+    padding: 5px;
+}
+.Masculino-ft{
+    padding: 20px;
+}
+.torneos-ft{
+    size: 100%;
 }
