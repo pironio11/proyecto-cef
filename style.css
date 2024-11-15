@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /*border: 1px dotted #FF0008;*/
+}
+
+body {
+    background: url('imagenes/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(35, 123, 224);
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header li:hover{
+    transform: scale(1.2);
+}
+
+header ul li{
+    float: left;
+	margin:12px 25px;
+}
+header li{
+    list-style: none;
+}
+header a{
+    font: 20px arial;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+.persona img{
+    border-radius: 30px;
+}
+.logo img{
+    border-radius:10%;
+}
+
+footer{ /*Barra azul*/
+    text-align: center;
+    background-color:rgb(35, 123, 224);
+    color: white;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a{
+    font: arial;
+    font-weight: bold;
+    padding: 15px 5px;
+    opacity: 50%;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:visited{
+    color: black;
+}
+
+footer img{
+    background-color: transparent;
+    animation: maps 1s infinite;
+}
+
+
+@keyframes maps {
+    0%{
+        transform:translateY(0px) ;
+    }
+    50%{
+        transform:translateY(10px) ;
+    }
+    100%{
+        transform:translateY(0px) ;
+    }
+}
+
+.foto-B {
+    display: flex;
+    flex-direction: end;
+    margin-bottom: 20px;
+}
+
+.foto-A {
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-top: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* para investigar*/
+.foto-BS, .foto-V, .foto-H, .foto-F, .foto-P, .foto-S {
+    background-color: rgb(35, 123, 224);
+    opacity: 0.98;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.foto-BS:hover, .foto-V:hover, .foto-H:hover, .foto-F:hover, .foto-P:hover, .foto-S:hover {
+    transform: scale(1.1);
+}
+
+.foto-BS img, .foto-V img, .foto-H img, .foto-F img, .foto-P img, .foto-S img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-mask {
+    padding: 15px;
+    color: #333;
+}
+
+.image-mask h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.image-mask p {
+    font-size: 0.95em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.contenedor-info{
+    background-color: transparent;
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+.inicio{
+    background-image: url(imagenes/fondo2.jpg);
+    background-repeat: no-repeat; /* que no se repitan las imagenes */
+    background-size: cover; /* imagen completa adentro de este brackground*/
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    padding: 20px; /* espacio interior opcional */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* agrega una sombra para destacar la tarjeta */
+    color: #ffffffc2;
+}
+.inicio-contenido h1{
+   text-align: center;
+}
+.inicio-contenido h2{
+    text-align: center;
+}
+.inicio-contenido li{
+    margin: 30px;
+}
+.inicio-contenido p{
+    text-align: center;
+}
+.resaltado {
+    color: #ffffff; /* cambia a cualquier color de texto */
+    font-weight: bold; /*  añade negrita */
+    text-decoration: underline; /* subraya el texto */
+}
+.description {
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+/*    CAMBIOS PARA PAGINA BASQUET/*
