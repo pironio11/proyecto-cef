@@ -1,4 +1,4 @@
-/* From Uiverse.io by andrew-demchenk0 */ 
+
 body {
   background-image: url('../imagenes/5618236.jpg');
   background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Asegúrate de usar 'height' en lugar de 'min-height' */
+  height: 50vh; /* Asegúrate de usar 'height' en lugar de 'min-height' */
   margin: 0;
   padding: 0;
 }
