@@ -2,20 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    /*border: 1px dotted #FF0008;*/
+    font-family: 'Arial', sans-serif;
 }
+
 body {
-    background: url('../imagenes/chase-center.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url('../imagenes/bsqt1.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    color: #fff;
 }
-header{
+
+.persona img{
+    border-radius: 30px;
+}
+.logo img{
+    border-radius:10%;
+}
+
+header {
     background-color: rgb(35, 123, 224);
     opacity: 0.8;
     display: flex;
@@ -23,35 +26,85 @@ header{
     align-items: center;
     padding: 10px 20px;
 }
-header li:hover{
+
+header li:hover {
     transform: scale(1.2);
 }
 
-header ul li{
+header ul li {
     float: left;
-	margin:12px 25px;
+    margin: 12px 25px;
 }
-header li{
+
+header li {
     list-style: none;
 }
-header a{
+
+header a {
     font: 20px arial;
     font-weight: bold;
-    color:rgb(0, 0, 0);
-    list-style: none;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.persona img{
-    border-radius: 30px;
-}
-.logo img{
-    border-radius:40%;
+main {
+    padding: 40px;
 }
 
-footer{ /*Barra azul*/
+#tittle-basquet {
     text-align: center;
-    background-color:rgb(35, 123, 224);
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+.categorias {
+    background-color: rgba(35, 123, 224, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.categoria-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.info, .torneos {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.torneos ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(35, 123, 224);
     color: white;
     padding: 8px;
     position: fixed;
@@ -59,153 +112,27 @@ footer{ /*Barra azul*/
     bottom: 0;
 }
 
-footer a{
+footer a {
     font: arial;
     font-weight: bold;
     padding: 15px 5px;
     opacity: 50%;
-}
-footer a{
     text-decoration: none;
 }
-footer a:visited{
-    color: black;
-}
 
-footer img{
+footer img {
     background-color: transparent;
     animation: maps 1s infinite;
 }
 
-
 @keyframes maps {
-    0%{
-        transform:translateY(0px) ;
+    0% {
+        transform: translateY(0px);
     }
-    50%{
-        transform:translateY(10px) ;
+    50% {
+        transform: translateY(10px);
     }
-    100%{
-        transform:translateY(0px) ;
+    100% {
+        transform: translateY(0px);
     }
 }
-
-/*prueba de ubicacion*/
-
-
-
-#contenido-basquet{
-    display: grid;
-    grid-template-columns: 2fr 1fr ; 
-    grid-template-rows: 2fr;
-    grid-gap: 20px;
-    padding: 30px;
-    padding-bottom: 100px;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-
-#tittle-basquet{
-    text-align: center;
-    padding: 40px;
-    font:20px arial ;
-    font-weight: bold;
-    color:rgb(0, 0, 0);
-}
-h2{
-    text-align: center;
-}
-    
-
-
-
-
-
-
-
-
-h3{
-    text-align: center;
-    font: 20px arial;
-}
-
-.cebollita{
-    text-align: center;
-    padding: 5px;
-}
-#U-13{
-    text-align: center;
-    padding: 5px;
-}
-#U-15{
-    text-align: center;
-    padding: 5px;
-}
-#U-17{
-    text-align: center;
-    padding: 5px;
-}
-#categorias-basquet{
-    border:2px solid lightgrey;
-    background-color: rgb(35, 123, 224);
-    color: beige;
-    padding: 20px;
-}
-#masculino-basquet{
-    padding: 20px;
-}
-
-
-#torneos-basquet-txt{
-    size: 100%;
-}
-#torneos-basquet{
-   /* -ms-grid-column-align: end;*/
-   padding: 10px;
-   grid-column: 2/2;
-   grid-row: 2/3;
-   height: 200px;
-    border:2px solid lightgrey;
-    background-color: rgb(35, 123, 224);
-    color: beige;
-    text-align: center;
-}
-#torneos-basquet-txt{
-    padding: 0px;
-}
-#muniB{
-    height: 50px;
-    padding: 15px;
-    
-}
-#picunB{
-    height: 50px;
-    padding: 15px;
-}
-#cipoB{
-    height: 50px;
-    padding: 15px;
-}
-
-#info-basquet{
-    height: 300px;
-    grid-column: 2/2;
-    grid-row: 1/1;
-    background-color: rgb(35, 123, 224);
-    color: beige;
-    border:2px solid lightgrey;
-    padding: 20px;
-}
-#info-basquet-txt{
-    font: 17px arial;
-    padding: 8px;
-}
-
-
-
-#categorias-basquet{
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-
